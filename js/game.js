@@ -97,7 +97,7 @@ class game {
             if (this.score >= tager || this.checkWin()) 
                 this.newGold();
             else {
-                window.alert("You lose!" + "\n" + "Your Score: " + this.score);
+                window.alert("你的得分: " + this.score);
                 location.reload();
             }
         }
