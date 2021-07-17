@@ -37,8 +37,8 @@ class gold {
                 break;
             case 2:
                 this.speed = this.game.getWidth() / 20;
-                this.width = 2.5 * this.game.getWidth();
-                this.height = 2.5 * this.game.getWidth();
+                this.width = 0.8 * this.game.getWidth();
+                this.height = 0.8 * this.game.getWidth();
                 this.IM = goldIm;
                 this.score = 250;
                 break;
