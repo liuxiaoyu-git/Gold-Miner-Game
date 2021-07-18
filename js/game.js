@@ -1,20 +1,3 @@
-let game_W = 20;
-let game_H = 20;
-let XXX = 0, YYY = 0, Xh = 0, Yh = 0;
-let MaxLeng = 0;
-let speedReturn = 0
-let R = 0, r = 0;
-let drag = false;
-let d = false;
-let ok = false;
-let angle = 90;
-let ChAngle = -1;
-index = -1;
-level = -1;
-time = 60;
-tager = 0;
-timeH = 0;
-vlH = 0;
 var bg = new Image();
 bg.src="images/background.png";
 var hook = new Image();
@@ -27,9 +10,24 @@ var levelIM = new Image();
 levelIM.src="images/level.png";
 var clockIM = new Image();
 clockIM.src="images/clock.png";
-
-
+let game_W = 20;
+let game_H = 20;
+let XXX = 0, YYY = 0, Xh = 0, Yh = 0;
+let MaxLeng = 0;
+let speedReturn = 0
+let R = 0, r = 0;
+let drag = false;
+let d = false;
+let ok = false;
+let angle = 90;
+let ChAngle = -1;
 let N = -10;
+index = -1;
+level = -1;
+time = 60;
+tager = 0;
+timeH = 0;
+vlH = 0;
 
 class game {
     constructor() {
