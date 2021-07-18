@@ -59,7 +59,7 @@ class gold {
             case 5:
                 this.speed = this.game.getWidth() / 15;
                 this.width = 2 * this.game.getWidth();
-                this.height = 2 * this.game.getWidth();
+                this.height = 2.2 * this.game.getWidth();
                 this.IM = rockIm;
                 this.score = 50;
                 break;
