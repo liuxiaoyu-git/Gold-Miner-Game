@@ -17,10 +17,15 @@ $ oc new-app httpd:2.4-el7~http://$(oc get route gogs -n gogs -o jsonpath='{.spe
 $ oc expose svc gold-miner-game
 ```
  2. 设置游戏应用webhook，实现自动build。
+
 1)在浏览器中查看gold-miner-game项目中名为gold-miner-game的buildconfig对象。
+
 2)在webhooks区域点击“Copy URL with Secret”链接。
+
 3)进入Gogs中的Gold-Miner-Game，然后再进入仓储设置->管理Web钩子，添加“Gogs”类型的Web钩子。
+
 4)在推送地址中填入"2)"复制的链接，然后点击“添加web钩子”
+
 5)修改Gogs中Gold-Miner-Game的代码，确认可触发新的gold-miner-game构建。
 
 # 部署投票应用
