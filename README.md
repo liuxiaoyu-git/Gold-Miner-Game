@@ -9,6 +9,31 @@ $ oc new-app -f https://raw.githubusercontent.com/liuxiaoyu-git/cicd-software-te
 https://github.com/liuxiaoyu-git/GoldMiner-Game
 https://github.com/liuxiaoyu-git/vote
 
+# 将old和new分支同步到gogs中
+```bash
+install git
+
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+
+//add source repo and target repo
+git remote add github https://github.com/liuxiaoyu-git/Gold-Miner-Game
+git remote add demo https://try.gitea.io/dawnsky/Gold-Miner-Game
+git remore -v
+
+//download two branch to local
+git clone https://github.com/liuxiaoyu-git/Gold-Miner-Game -b old ./Gold-Miner-Game-old
+git clone https://github.com/liuxiaoyu-git/Gold-Miner-Game -b new ./Gold-Miner-Game-new
+
+cd Gold-Miner-Game-old
+git init
+git push demo old
+
+cd Gold-Miner-Game-new
+git init
+git push demo new
+```
+
 # 部署游戏应用，配置webhook实现自动构建
  1. 部署游戏应用
 ```bash
