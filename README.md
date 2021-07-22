@@ -9,7 +9,8 @@ $ oc new-app -f https://raw.githubusercontent.com/liuxiaoyu-git/cicd-software-te
 https://github.com/liuxiaoyu-git/GoldMiner-Game
 https://github.com/liuxiaoyu-git/vote
 
-# 将master，old和new分支同步到gogs中
+# 将master，old和new分支同步到gogs中https://try.gitea.io/dawnsky (password-5418854188)
+
 ```bash
 install git
 
