@@ -9,7 +9,7 @@ $ oc new-app -f https://raw.githubusercontent.com/liuxiaoyu-git/cicd-software-te
 https://github.com/liuxiaoyu-git/GoldMiner-Game
 https://github.com/liuxiaoyu-git/vote
 
-# 将old和new分支同步到gogs中
+# 将master，old和new分支同步到gogs中
 ```bash
 install git
 
@@ -22,8 +22,13 @@ git remote add demo https://try.gitea.io/dawnsky/Gold-Miner-Game
 git remore -v
 
 //download two branch to local
+git clone https://github.com/liuxiaoyu-git/Gold-Miner-Game
 git clone https://github.com/liuxiaoyu-git/Gold-Miner-Game -b old ./Gold-Miner-Game-old
 git clone https://github.com/liuxiaoyu-git/Gold-Miner-Game -b new ./Gold-Miner-Game-new
+
+cd Gold-Miner-Game
+git init
+git push demo
 
 cd Gold-Miner-Game-old
 git init
