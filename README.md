@@ -17,6 +17,10 @@ install git
 git config --global user.name "Your Name"
 git config --global user.email "your@email.com"
 
+mkdir ~/mygit
+cd  ~/mygit
+git init
+
 //add source repo and target repo
 git remote add github https://github.com/liuxiaoyu-git/Gold-Miner-Game
 git remote add demo https://try.gitea.io/dawnsky/Gold-Miner-Game
@@ -27,15 +31,15 @@ git clone https://github.com/liuxiaoyu-git/Gold-Miner-Game
 git clone https://github.com/liuxiaoyu-git/Gold-Miner-Game -b old ./Gold-Miner-Game-old
 git clone https://github.com/liuxiaoyu-git/Gold-Miner-Game -b new ./Gold-Miner-Game-new
 
-cd Gold-Miner-Game
+cd  ~/mygit/Gold-Miner-Game
 git init
 git push demo
 
-cd Gold-Miner-Game-old
+cd ~/mygit/Gold-Miner-Game-old
 git init
 git push demo old
 
-cd Gold-Miner-Game-new
+cd ~/mygit/Gold-Miner-Game-new
 git init
 git push demo new
 ```
