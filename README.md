@@ -58,7 +58,7 @@ $ oc expose svc gold-miner-game
 
 1)在浏览器中查看gold-miner-game项目中名为gold-miner-game的buildconfig对象。
 
-2)在webhooks区域点击“Copy URL with Secret”链接。
+2)在webhooks区域点击github的“Copy URL with Secret”链接。
 
 3)进入Gogs中的Gold-Miner-Game，然后再进入仓储设置->管理Web钩子，添加“Gogs”类型的Web钩子。
 
