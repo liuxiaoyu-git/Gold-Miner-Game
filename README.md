@@ -22,9 +22,9 @@ cd  ~/mygit
 git init
 
 //add source repo and target repo
-git remote add github https://github.com/liuxiaoyu-git/Gold-Miner-Game
-git remote add demo https://try.gitea.io/dawnsky/Gold-Miner-Game
-git remote -v
+//git remote add github https://github.com/liuxiaoyu-git/Gold-Miner-Game
+//git remote add demo https://try.gitea.io/dawnsky/Gold-Miner-Game
+//git remote -v
 
 //download two branch to local
 git clone https://github.com/liuxiaoyu-git/Gold-Miner-Game
@@ -33,14 +33,17 @@ git clone https://github.com/liuxiaoyu-git/Gold-Miner-Game -b new ./Gold-Miner-G
 
 cd  ~/mygit/Gold-Miner-Game
 git init
+git remote add demo https://try.gitea.io/dawnsky/Gold-Miner-Game
 git push demo
 
 cd ~/mygit/Gold-Miner-Game-old
 git init
+git remote add demo https://try.gitea.io/dawnsky/Gold-Miner-Game
 git push demo old
 
 cd ~/mygit/Gold-Miner-Game-new
 git init
+git remote add demo https://try.gitea.io/dawnsky/Gold-Miner-Game
 git push demo new
 ```
 
