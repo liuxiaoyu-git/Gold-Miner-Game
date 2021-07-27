@@ -24,7 +24,7 @@ git init
 //add source repo and target repo
 git remote add github https://github.com/liuxiaoyu-git/Gold-Miner-Game
 git remote add demo https://try.gitea.io/dawnsky/Gold-Miner-Game
-git remore -v
+git remote -v
 
 //download two branch to local
 git clone https://github.com/liuxiaoyu-git/Gold-Miner-Game
